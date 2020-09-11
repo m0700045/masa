@@ -146,7 +146,7 @@ text-align:center;
 }
 
 .contact{
-  height:500px;
+  height:700px;
   width:100%;
   text-align:center;
 }
@@ -170,6 +170,7 @@ border-radius: 50%;
   margin:0 auto;
   color: orange;
   box-shadow:3px 3px #000;
+  border-radius:6px;
 }
 
 .contactmaill:active{
