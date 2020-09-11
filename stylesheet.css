@@ -1,0 +1,177 @@
+body{
+  margin:0;
+  padding:0;
+}
+
+.fix {
+  background-color: whitesmoke;
+  height:40px;
+  width:100%;
+  position:fixed;
+  top:0;
+  z-index:10;
+  opacity: 0.7;
+  margin: 0 auto;
+  text-align:center;
+  padding-left:0;
+  padding-top:10px;
+  
+}
+
+.fix li{
+  display: inline;
+  padding: 20px;
+}
+
+.top-img {
+background-image: url(img/IMG_3876_Original.jpg);
+background-size: cover;
+width:100%;
+height:700px;
+opacity: 0.8;
+
+
+
+}
+
+.top-title{
+  padding:150px;
+  text-align:center;
+  color:white;
+}
+
+.top-title h1{
+  font-size:40px;
+
+}
+
+main{
+  width:100%;
+  height:400px;
+ 
+}
+
+.profile{
+  line-height:100px;
+  text-align:center;
+ 
+
+}
+
+.profile-tag{
+  margin:0 auto;
+  display:flex;
+ 
+}
+
+.profile-tag img {
+  border-radius:50%;
+ }
+
+.table-p th{
+ padding-left:50px;
+ padding-right:30px;
+
+}
+
+section{
+  width:100%;
+  background-color:#ccc;
+}
+
+.life h1{
+  font-size:40px;
+  text-align:center;
+  margin:0;
+  padding:50px;
+}
+
+.life{
+  list-style: none;
+  width:600px;
+  height:1250px;
+  padding-left:0;
+  margin:0 auto;
+}
+
+.life li{
+  border-bottom:1px solid rgba(242, 236, 236, 0.681);
+  margin-right:0;
+  
+}
+
+.life p{
+  padding:30px;
+  width:450px;
+  margin-left:30px;
+}
+ .portfolio{
+    height:500px;
+    width:100%;
+  }
+ 
+  .portfolio h1{
+  font-size:40px;
+  text-align:center;
+  margin:0;
+  padding:50px;
+  }
+
+
+.portfolio img{
+  border:1px solid #000
+}
+
+.porimg{
+text-align:center;
+}
+
+.porp{
+  margin-top:0;
+  margin-bottom:0;
+}
+
+#contact{
+  font-size:40px;
+  text-align:center;
+  margin:0;
+  padding:50px;
+}
+
+.contact{
+  height:500px;
+  width:100%;
+  text-align:center;
+}
+
+
+.contactmail img{
+border-radius: 50%;
+
+}
+
+footer{
+  background-color: skyblue;
+  width:100%;
+  height:100px;
+  text-align:center;
+  padding-top:20px;
+  padding-bottom:20px;
+ 
+}
+.footerfix li{
+  list-style:none;
+  display:flex;
+  display: inline;
+  padding: 20px;
+  
+}
+.footerfix{
+  padding-left:0;
+}
+
+footer p{
+  margin-top:20px;
+  opacity:.7;
+  font-size:10px;
+}
