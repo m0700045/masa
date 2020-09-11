@@ -24,7 +24,7 @@ body{
 }
 
 .top-img {
-background-image: url(https://github.com/m0700045/masa/blob/master/IMG_3876_Original.jpg?raw=true);
+background-image: url(img/IMG_3876_Original.jpg);
 background-size: cover;
 width:100%;
 height:700px;
@@ -38,6 +38,8 @@ opacity: 0.8;
   padding:150px;
   text-align:center;
   color:white;
+  
+
 }
 
 .top-title h1{
@@ -58,8 +60,13 @@ main{
 
 }
 
-.profile-tag{
+.center{
   margin:0 auto;
+  width:500px;
+}
+
+.profile-tag{
+  
   display:flex;
  
 }
