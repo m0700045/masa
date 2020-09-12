@@ -29,9 +29,19 @@ background-size: cover;
 width:100%;
 height:700px;
 opacity: 0.8;
+animation: popup 5s forwards;
+z-index: -3;
+background-attachment: fixed;
+}
 
-
-
+@keyframes popup{
+  0%{
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.07, 0.2, 0.93, 0.71);
+  }
+  100%{
+    opacity: 0.8;
+  }
 }
 
 .top-title{
@@ -56,7 +66,7 @@ main{
 .profile{
   line-height:100px;
   text-align:center;
- 
+  text-shadow:2px 2px 2px rgb(137, 137, 148)
 
 }
 
@@ -83,7 +93,17 @@ main{
 
 section{
   width:100%;
-  background-color:#ccc;
+  padding-left:0;
+  
+}
+
+.back{
+  background-image: url(https://github.com/m0700045/masa/blob/master/IMG_4082_Original.jpg?raw=true);
+  background-size: cover;
+  opacity: 0.8;
+  animation: popup 5s forwards;
+  z-index: -4;
+  background-attachment: fixed;
 }
 
 .life h1{
@@ -91,14 +111,15 @@ section{
   text-align:center;
   margin:0;
   padding:50px;
+  text-shadow:2px 2px 2px rgb(137, 137, 148)
 }
 
 .life{
   list-style: none;
   width:600px;
-  height:1250px;
-  padding-left:0;
   margin:0 auto;
+  height:1250px;
+  font-weight: bold;
 }
 
 .life li{
@@ -109,7 +130,7 @@ section{
 
 .life p{
   padding:30px;
-  width:450px;
+  width:450px; 
   margin:0 auto;
 }
  .portfolio{
@@ -122,6 +143,7 @@ section{
   text-align:center;
   margin:0;
   padding:50px;
+  text-shadow:2px 2px 2px rgb(137, 137, 148)
   }
 
 
@@ -143,6 +165,7 @@ text-align:center;
   text-align:center;
   margin:0;
   padding:50px;
+  text-shadow:1px 1px rgb(5, 5, 5)
 }
 
 .contact{
@@ -151,26 +174,21 @@ text-align:center;
   text-align:center;
 }
 
-
-.contactmail img{
-border-radius: 50%;
-
-}
-
 .contactmail{
   text-align:center;
   margin:0 auto;
 }
 
 .contactmaill{
-  background-color:gray;
+  background-color:skyblue;
   cursor: pointer;
   padding:5px;
   width:70px;
   margin:0 auto;
   color: orange;
-  box-shadow:3px 3px #000;
+  box-shadow:3px 3px rgb(158, 143, 143);
   border-radius:6px;
+  
 }
 
 .contactmaill:active{
@@ -180,7 +198,10 @@ border-radius: 50%;
 }
 
 
+.contactmail img{
+border-radius: 50%;
 
+}
 
 footer{
   background-color: skyblue;
@@ -207,3 +228,11 @@ footer p{
   opacity:.7;
   font-size:10px;
 }
+
+.far {
+  margin-right:10px;
+}
+.fas {
+  margin-right:10px;
+}
+
