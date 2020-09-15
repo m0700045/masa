@@ -95,9 +95,9 @@ section{
 }
 
 .life{
-  background-image: url(https://github.com/m0700045/masa/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-09-15%2018.41.07.png?raw=true);
+  background-image: url(https://github.com/m0700045/masa/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-09-15%2019.01.57.png?raw=true);
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.4;
   animation: popup 5s forwards;
   z-index: -4;
   background-attachment: fixed;
@@ -116,17 +116,18 @@ section{
   padding-right:40px;
   margin:0 auto;
   height:1250px;
+ 
+}
+
+span{
   font-weight: bold;
+  font-size:20px;
 }
 
 .life__ul li{
   border-bottom:1px solid rgba(242, 236, 236, 0.681);
   margin-right:0;
   
-}
-
-.span{
-font-weight:bold;
 }
 
 .life__ul p{
@@ -236,71 +237,3 @@ footer p{
   margin-right:10px;
 }
 
-@media (max-width: 600px){
-body{
-  width:;
-
- 
-}
-.header__link li{
-  display: inline;
-  padding: 10px;
-}
-.top{
-  height:400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-
-.top h1{
-  font-size:30px;
-
-}
-
-.top p{
-  font-size:20px;
-}
-
-main{
-  height:600px;
- 
-}
-
-
-.container__profile{
-margin:50px;
-}
-
-.container__img{
-margin:0 auto 50px;
-
-
-}
-.container__box{
-  flex-direction: column;
-  justify-content: center;
-  display:flex;
-}
-
-.container__table{
-  justify-content: center;
-  display:flex;
-}
-
-
-.container__table th{
-  padding-left:0px;
-  padding-right:0px;
-  
- 
-}
-
-.life{
-  height:1600px;
-}
-.life li{
-  font-size:15px;
-}
-}
