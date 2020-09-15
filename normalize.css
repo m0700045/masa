@@ -113,7 +113,7 @@ section{
 
 .life__ul{
   list-style: none;
-
+  padding-right:40px;
   margin:0 auto;
   height:1250px;
   font-weight: bold;
@@ -123,6 +123,10 @@ section{
   border-bottom:1px solid rgba(242, 236, 236, 0.681);
   margin-right:0;
   
+}
+
+.span{
+font-weight:bold;
 }
 
 .life__ul p{
