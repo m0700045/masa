@@ -46,6 +46,8 @@ header {
   top:1px;
   right:1px;
   cursor: pointer;
+  display:none;
+
 }
 
 .sp__menu #open.hide{
