@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="utf-8">
@@ -11,13 +11,37 @@
   </head>
   <body>
     <header>
-      <ul class="header__link">
-        <li><a href="#profilej">profile</a></li>
-        <li><a href="#keireki">career</a></li>
-        <li><a href="#portfolio">portfolio</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>
+      <div class="header">
+        <p>masafumi's  profile</p>
+        <ul class="header__link">
+          <li><a href="#profilej">profile</a></li>
+          <li><a href="#keireki">career</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+        <div class="sp__menu">
+          <span><i class="fas fa-bars" id="open"></i></span>
+        </div>
+      </div>
+
     </header>
+
+    <div class="navi">
+      <span><i class="fas fa-times" id="close"></i></span>
+      <nav>
+        <ul>
+          <li><a href="#profilej" id="close__btn">profile</a></li>
+          <li><a href="#keireki" id="close__btn">career</a></li>
+          <li><a href="#portfolio" id="close__btn">portfolio</a></li>
+          <li><a href="#contact" id="close__btn">contact</a></li>
+        </ul>
+
+      </nav>
+
+    </div>
+
+
+
      
     <section>
       <div class="top">
@@ -27,6 +51,8 @@
           </div>
       </div>
     </section>
+    
+    
 
     <main>
 
@@ -76,8 +102,8 @@
     <section>
       <div class="life__masa">
         <div class="life">
-        <ul class="life__ul">
           <h1 id="keireki"><i class="fas fa-running  fa-sm"></i>career</h1>
+        <ul class="life__ul">
           <li>2014年3月 　　　大阪府・・・・・高等学校　普通総合学科　卒業</li>
           <li>2014年3月 　　　大阪・・医療大学　医療学部　理学療法学科　入学</li>
           <p>健康と体の仕組みに興味を持ち、それらを学べる大学に入学。
@@ -135,6 +161,6 @@
        All Rights Reserved.</p>
     </footer>
     <script> </script>
-    
+    <script src="js/main.js"></script>
   </body>
 </html>
