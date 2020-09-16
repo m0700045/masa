@@ -80,11 +80,14 @@ margin:0 auto 50px;
   padding-top:30px;
 }
 
-
-
 .life li{
   font-size:15px;
+  width:100%;
 }
+
+.life__ul p{
+  width:90%;
+  padding:30px 0;
 }
 
 @media(min-width: 601px){
