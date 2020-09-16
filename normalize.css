@@ -43,8 +43,8 @@ header {
 .sp__menu{
   z-index: 9;
   position: absolute;
-  top:3px;
-  right:2px;
+  top:1px;
+  right:1px;
   cursor: pointer;
 }
 
