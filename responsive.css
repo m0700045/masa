@@ -1,4 +1,4 @@
-@media (max-width: 600px){
+@media (max-width: 700px){
 
   .header__link a{
     display:none;
@@ -16,11 +16,12 @@
   margin:8px;
  
 }
-  
-  .sp__menu{
+
+.sp__menu{
   display:block;
 }
 /*---------- ----------------------------------------------  */
+
 .top{
   height:600px;
   display: flex;
@@ -38,6 +39,7 @@
   font-size:20px;
 }
 /*---------- ----------------------------------------------  */
+
 main{
   height:600px;
  
@@ -69,8 +71,47 @@ margin:0 auto 50px;
   padding-left:0px;
   padding-right:0px;
   
+ 
 }
-  /*---------- ----------------------------------------------  */
+/*---------- ----------------------------------------------  */
+
+.hobby{
+  height:1400px;
+  
+  
+}
+
+#p1{
+  display:block;
+  margin-top:20px;
+}
+
+
+#p2{
+  display:none;
+}
+
+.hobby__box{
+  width:250px;
+  flex-direction: column;
+}
+
+
+
+.hobby__ul{
+  width:250px;
+  height:300px;
+  overflow: scroll;
+  border: 4px solid skyblue;
+  padding:4px;
+}
+
+
+
+/*---------- ----------------------------------------------  */
+
+
+
 .life__masa{
   margin-right:20px;
   margin-left:20px;
@@ -80,8 +121,9 @@ margin:0 auto 50px;
 .life__ul{
   border-top: 2px solid black;
   overflow:scroll;
-  padding-top:30px;
- 
+  padding-top: 30px;
+}
+
 
 .life li{
   font-size:15px;
@@ -93,3 +135,5 @@ margin:0 auto 50px;
   padding:30px 0;
 }
 }
+
+
