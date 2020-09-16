@@ -65,15 +65,21 @@ margin:0 auto 50px;
   padding-left:0px;
   padding-right:0px;
   
- 
+}
+  
+.life__masa{
+  margin-right:20px;
+  margin-left:20px;
+  border: 2px solid black;
 }
 
 .life__ul{
   border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  width:60%;
   overflow:scroll;
   padding-top:30px;
 }
+
 
 
 .life li{
