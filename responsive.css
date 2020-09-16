@@ -1,13 +1,22 @@
 @media (max-width: 600px){
-body{
-  width:;
 
- 
-}
+  .header__link a{
+    display:none;
+  }
+
+
 .header__link li{
   display: inline;
   padding: 10px;
 }
+
+.header p{
+  display:block;
+  float: left;
+  margin:8px;
+ 
+}
+
 .top{
   height:600px;
   display: flex;
@@ -59,10 +68,21 @@ margin:0 auto 50px;
  
 }
 
-.life{
-  height:1900px;
+.life__ul{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  overflow:scroll;
+  padding-top:30px;
 }
+
+
 .life li{
   font-size:15px;
 }
+}
+
+@media(min-width: 601px){
+  .sp__menu #open{
+    display:none;
+  }
 }
