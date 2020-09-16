@@ -60,7 +60,7 @@ header {
   top:0;
   bottom:0;
   right:0;
-  left:auto + 250px;
+  left:auto;
   background:rgb(243, 243, 243 ,.95);
   opacity: 0;
   pointer-events: none;
@@ -115,7 +115,7 @@ header {
 
 #close{
   position:fixed;
-  top:10px;
+  top:2px;
   bottom:0;
   left: auto;
   right:5px;
