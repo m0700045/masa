@@ -79,10 +79,8 @@ margin:0 auto 50px;
 
 .life__ul{
   border-top: 2px solid black;
-  width:60%;
   overflow:scroll;
-  padding-top:30px;
-}
+ 
 
 .life li{
   font-size:15px;
