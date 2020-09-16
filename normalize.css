@@ -53,8 +53,8 @@ header {
 .sp__menu #open.hide{
   display:none;
 }
+/* ---------- ---------------------------------------------- */
 
-/*---------- ----------------------------------------------  */
 .navi{
  width:250px;
   z-index: 10;
@@ -123,7 +123,7 @@ header {
   right:5px;
   cursor: pointer;
 }
-/*---------- ----------------------------------------------  */
+/* ---------- ---------------------------------------------- */
 .top {
 background-image: url(https://github.com/m0700045/masa/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-09-15%2018.40.32.png?raw=true);
 background-size: cover;
@@ -156,7 +156,7 @@ flex-direction: column;
   font-weight: bold;
 }
 
-
+/* ---------- ---------------------------------------------- */
 
 main{
   
@@ -191,7 +191,70 @@ main{
 .container__table{
   overflow: hidden;
 }
-/*---------- ----------------------------------------------  */
+/* ---------- ---------------------------------------------- */
+.hobby h1{
+  font-size:40px;
+  text-align:center;
+  margin:0;
+  padding:50px;
+  text-shadow:2px 2px 2px rgb(137, 137, 148)
+}
+
+.hobby{
+  height:800px;
+  width:100%;
+  justify-content: center;
+  background-color:rgba(56, 182, 231, 0.6);
+}
+
+.hobby__box{
+  display:block;
+  display:flex;
+  margin:0 auto;
+  width:700px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+
+.hobby__minibox h2{
+  text-align:center;
+  width:250px;
+}
+
+#p1{
+  display:none;
+}
+
+#p2{
+  margin-right:20px;
+}
+
+.hobby__ul{
+  margin:30px auto;
+  padding-left:0;
+  width:700px;
+
+  
+}
+
+.hobby__ul li{
+  list-style-type: none;
+}
+
+.hobby img{
+  border-radius:30px;
+}
+
+.hobby p{
+ align-self: center;
+ width:250p
+}
+
+
+/* ---------- ---------------------------------------------- */
+
+
 section{
   
   padding-left:0;
@@ -220,14 +283,15 @@ section{
   padding-right:40px;
   margin:0 auto;
   height:1100px;
-  width:600px;
-}
 
+}
 
 span{
   font-weight: bold;
   font-size:20px;
 }
+
+
 
 .life__ul li{
   border-bottom:1px solid rgba(242, 236, 236, 0.681);
@@ -241,6 +305,7 @@ span{
   margin:0 auto;
   
 }
+
 /*---------- ----------------------------------------------  */
  .portfolio{
     height:500px;
@@ -268,7 +333,9 @@ text-align:center;
   margin-top:0;
   margin-bottom:0;
 }
-/*---------- ----------------------------------------------  */
+
+/*----------- ---------------------------------------------- */
+
 #contact{
   font-size:40px;
   text-align:center;
@@ -311,7 +378,8 @@ text-align:center;
 border-radius: 50%;
 
 }
-/*---------- ----------------------------------------------  */
+/* -------------------------------------------------------- */
+
 footer{
   background-color: skyblue;
   height:100px;
@@ -343,3 +411,4 @@ footer p{
 .fas {
   margin-right:10px;
 }
+
