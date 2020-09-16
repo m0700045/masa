@@ -90,8 +90,4 @@ margin:0 auto 50px;
   padding:30px 0;
 }
 
-@media(min-width: 601px){
-  .sp__menu #open{
-    display:none;
-  }
-}
+
