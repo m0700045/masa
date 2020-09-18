@@ -109,6 +109,9 @@ header {
 .navi.show li:nth-child(4){
   transition-delay:.4s;
 }
+.navi.show li:nth-child(5){
+  transition-delay:.5s;
+}
 
 .navi.hide__navi{
   opacity: 0;
