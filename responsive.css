@@ -129,7 +129,7 @@ main{
 
 
 .life{
-  width:300px;
+  width: 100%;
   border: 2px solid black;
   height: 1500px;
   margin:0 auto;
@@ -139,7 +139,7 @@ main{
   border-top: 2px solid black;
   overflow:scroll;
   padding: 30px 0 30px;
-  width: 300px;
+  width: 80%;
 }
 
 .life__display ul{
