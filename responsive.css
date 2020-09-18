@@ -131,7 +131,8 @@ main{
 .life{
   width:300px;
   border: 2px solid black;
-  height: 1500px;;
+  height: 1500px;
+  margin:0 auto;
 }
 
 .life__display{
