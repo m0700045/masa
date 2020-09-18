@@ -235,6 +235,9 @@ main{
   margin-right:20px;
 }
 
+.hobby span{
+  font-weight: bold;
+}
 
 .hobby__display{
   list-style-type: none;
