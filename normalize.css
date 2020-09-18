@@ -520,6 +520,7 @@ text-align:center;
 
 .contact__mail table{
   margin:0 auto;
+  border-radius:5px;
 }
 
 .contact__mail th{
