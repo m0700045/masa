@@ -8,7 +8,7 @@ header {
   
   height:40px;
   width:100%;
-  z-index:7;
+  z-index:8;
   margin: 0 auto;
   display: flex;
   position: relative;
@@ -174,6 +174,7 @@ main{
 
 .container__box{
   justify-content: center;
+  align-items: center;
   display:flex;
  
 }
@@ -185,7 +186,7 @@ main{
 .container__table th{
  padding-left:50px;
  padding-right:30px;
-
+ padding-top:5px;
 }
 
 .container__table{
@@ -201,17 +202,18 @@ main{
 }
 
 .hobby{
-  height:900px;
+  height:850px;
   width:100%;
   justify-content: center;
   background-color:rgba(56, 182, 231, 0.6);
+  
 }
 
 .hobby__box{
   display:block;
   display:flex;
-  margin:0 auto;
-  width:700px;
+  margin:0px auto;
+  width:600px;
   justify-content: space-between;
   overflow: hidden;
 }
@@ -230,36 +232,116 @@ main{
   margin-right:20px;
 }
 
-.hobby__ul{
+
+.hobby__display{
+  list-style-type: none;
+  width:600px;
+  padding:0;
+  margin:100px auto;
+}
+
+.hobby__display ul{
+  list-style-type: none;
+  margin-bottom:30px;
+}
+.hobby ul{
+  padding:0;
+}
+
+
+#hobby__open{
+  text-align: center;
+  padding:5px;
+  border: 2px solid black;
+  width: 70px;
+  margin:10px auto;
+  background-color: rgb(255, 255, 255, .6);
+  box-shadow:1px 1px black;
+  border-radius:4px;
+
+}  
+#hobby__open:hover{
+  cursor: pointer;
+  opacity: .4;
+}  
+
+#hobby__close:hover{
+  cursor: pointer;
+  opacity: .4;
+}  
+
+#hobby__close{
+  text-align: center;
+  padding:5px;
+  border: 2px solid black;
+  width: 70px;
+  margin:10px auto;
+  background-color: rgb(255, 255, 255, .6);
+  box-shadow:1px 1px black;
+  border-radius:4px;
+
+  
+}  
+
+#hobby__mask{
+  z-index: 6;
+  background: gray;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left: 0;
+  right:0;
+  opacity: 0;
+  transition: opacity .6s;
+  pointer-events: none;
+}  
+
+#hobby__hidden{
   margin:30px auto;
   padding-left:0;
   width:700px;
+  z-index: 7;
+  background-color: white;
+  height:300px;
+  position: absolute;
+  top:1700px;
+  right:0;
+  left:0;
+  margin: 0 auto;
+  padding:20px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity .6s;
+  pointer-events: none;
+}  
 
-  
-}
 
-.hobby__ul li{
+#hobby__hidden li{
   list-style-type: none;
 }
+
 
 .hobby img{
   border-radius:30px;
 }
 
 .hobby p{
- align-self: center;
- width:250p
+  align-self: center;
+  width:250p
+}
+#hobby__hidden.hobby__show{
+  opacity: 1;
+  pointer-events: auto;
+}
+#hobby__mask.hobby__show{
+  opacity: .5;
+  pointer-events: auto;
 }
 
 
 /* ---------- ---------------------------------------------- */
 
 
-section{
-  
-  padding-left:0;
-  
-}
 
 .life{
   background-image: url(https://github.com/m0700045/masa/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-09-15%2019.01.57.png?raw=true);
@@ -268,6 +350,10 @@ section{
   animation: popup 5s forwards;
   z-index: -4;
   background-attachment: fixed;
+  padding-left:0;
+  height:1100px;
+  width:100%;
+  
 }
 
 .life h1{
@@ -278,33 +364,115 @@ section{
   text-shadow:2px 2px 2px rgb(137, 137, 148)
 }
 
-.life__ul{
+.life__display{
   list-style: none;
   padding-right:40px;
   margin:0 auto;
-  height:1100px;
+  width:600px;
 
 }
 
-span{
+.life__display span{
   font-weight: bold;
-  font-size:20px;
 }
 
 
 
-.life__ul li{
+.life__display  li{
   border-bottom:1px solid rgba(242, 236, 236, 0.681);
   margin-right:0;
+  list-style-type: none;
   
 }
 
-.life__ul p{
+.life__display p{
   padding:30px;
   width:80%; 
   margin:0 auto;
-  
 }
+
+#life__open{
+  text-align: center;
+  padding:5px;
+  border: 2px solid black;
+  width: 70px;
+  margin:10px auto;
+  background-color: rgb(255, 255, 255, .6);
+  box-shadow:1px 1px black;
+  border-radius:4px;
+
+}
+
+#life__close{
+  text-align: center;
+  padding:5px;
+  border: 2px solid black;
+  width: 70px;
+  margin:10px auto;
+  background-color: rgb(255, 255, 255, .6);
+  box-shadow:1px 1px black;
+  border-radius:4px;
+ 
+}
+#life__open:hover{
+  opacity: .9;
+  cursor: pointer;
+}
+#life__close:hover{
+  opacity: .9;
+  cursor: pointer;
+}
+
+#life__mask{
+  background-color: gray;
+  position: fixed;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  z-index: 8;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+}
+
+#life__hidden{
+  width:600px;
+  height:1000px;
+  background:skyblue;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top:2160px;
+  right:0;
+  left:0;
+  margin:0 auto;
+  border-radius: 20px;
+  transition: opacity .6s;
+}
+
+#life__hidden span{
+  font-weight: bold;
+}
+
+#life__hidden ul{
+  padding: 40px;
+}
+#life__hidden li{
+  list-style-type: none;
+}
+
+#life__mask.life__show{
+  opacity: .5;
+  pointer-events: auto;
+}
+#life__hidden.life__show{
+ opacity: 1;
+ pointer-events: auto;
+}
+
 
 /*---------- ----------------------------------------------  */
  .portfolio{
@@ -312,7 +480,7 @@ span{
 
   }
  
-  .portfolio h1{
+  #portfolio{
   font-size:40px;
   text-align:center;
   margin-top:50px;
@@ -339,45 +507,49 @@ text-align:center;
 #contact{
   font-size:40px;
   text-align:center;
-  margin:0;
+  margin-top:50px;
   padding:50px;
-  text-shadow:1px 1px rgb(5, 5, 5)
+  text-shadow:2px 2px 2px rgb(137, 137, 148);
+
 }
 
 .contact{
-  height:600px;
-  
-  text-align:center;
+  height:500px;
+
 }
 
-.contact__mail{
-  text-align:center;
+.contact__mail table{
   margin:0 auto;
 }
 
-.contact__link{
+.contact__mail th{
+  padding:5px 10px;
+  margin:0;
+}
+.contact__mail td{
+  padding:5px 10px;
+  margin:0;
+}
+
+.contact__mail tr{
   background-color:skyblue;
   cursor: pointer;
-  padding:5px;
-  width:70px;
-  margin:0 auto;
+  width:120px;
+  font-size:20px;
   color: orange;
   box-shadow:3px 3px rgb(158, 143, 143);
   border-radius:6px;
+  padding:5px 10px;
   
 }
 
-.contact__link:active{
+.contact__mail tr:active{
   position: relative;
   top:3px;
   box-shadow:none;
 }
 
 
-.contact__mail img{
-border-radius: 50%;
-
-}
 /* -------------------------------------------------------- */
 
 footer{
