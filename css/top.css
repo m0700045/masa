@@ -1,0 +1,51 @@
+.top {
+  background-image: url(https://github.com/m0700045/masa/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-09-15%2018.40.32.png?raw=true);
+  background-size: cover;
+  background-position: center;
+  height:800px;
+  opacity: 0.8;
+  animation: popup 5s forwards;
+  z-index: -3;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+  flex-direction: column; 
+}
+  
+@keyframes popup{
+  0%{
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.07, 0.2, 0.93, 0.71);
+  }
+  100%{
+    opacity: 0.8;
+  }
+}
+
+.top__title{
+  font-size:30px;
+  font-weight: bold;
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+@media (max-width: 600px){
+
+  .top{
+    height:600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .top h1{
+    font-size:30px;
+  
+  }
+  
+  .top p{
+    font-size:20px;
+  }
+  }
