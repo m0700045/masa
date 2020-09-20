@@ -4,8 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Masafumi's profileo</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/navi.css">
+    <link rel="stylesheet" href="./css/career.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/top.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/hobby.css">
+    <link rel="stylesheet" href="./css/life.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="icon" href="https://github.com/m0700045/masa/blob/master/IMG_2764.jpg?raw=true">
     <script src="https://kit.fontawesome.com/18294fcd90.js" crossorigin="anonymous"></script>
   </head>
@@ -34,21 +43,15 @@
       <span><i class="fas fa-times  fa-2x" id="close"></i></span>
       <nav>
         <ul>
-          <li><a href="#profilej" ">Profile</a></li>
-          <li><a href="#hobby" ">Hobby</a></li>
-          <li><a href="#keireki" ">Career</a></li>
-          <li><a href="#portfolio" ">Portfolio</a></li>
-          <li><a href="#contact" ">Contact</a></li>
+          <li><a href="#profilej">Profile</a></li>
+          <li><a href="#hobby">Hobby</a></li>
+          <li><a href="#keireki">Career</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-
       </nav>
-
     </div>
     <!-- /*---------- ----------------------------------------------  */ -->
-
-
-
-     
     <section class="section__top">
       <div class="top">
           <div class="top__title">
@@ -57,100 +60,78 @@
           </div>
       </div>
     </section>
-    
-    
     <!-- /*---------- ----------------------------------------------  */ -->
-
     <main>
-
       <div class="container">
         <div class="container__profile">
           <h1 id="profilej"><i class="far fa-user fa-lg  fa-sm"></i>Profile</h1>
         </div>
         <div class="container__box">
           <div class="container__img">
-            <img src="https://github.com/m0700045/masa/blob/master/IMG_2764.jpg?raw=true" alt="profile画像" height="150" width="150">
+            <img src="https://github.com/m0700045/masa/blob/master/img/IMG_2764.jpg?raw=true" alt="profile画像" height="150" width="150">
           </div>
           <table class="container__table">
             <tr>
               <th>Name</th>
               <td> 島田将史(shimada masafumi)</td>
-            </tr>
-            
+            </tr>            
             <tr>
               <th>Birthday</th>
               <td>1995/12/14</td>
-            </tr>
-            
+            </tr>           
             <tr>
               <th>Hobby</th>
               <td>筋トレ・山登り・ロードバイク</td>
-            </tr>
-            
+            </tr>           
             <tr>
               <th>Skill</th>
               <td><span><i class="fab fa-html5 fa-2x" ></i></span>
-                  <span><i class="fab fa-css3-alt fa-2x"></i></span>
-                  <span><i class="fab fa-js fa-2x"></i>  （学習中）</span>
+              <span><i class="fab fa-css3-alt fa-2x"></i></span>
+              <span><i class="fab fa-js fa-2x"></i>  （学習中）</span>
               </td>
             </tr>
-
-
           </table>
        </div>
       </div>
     </main>
     <!-- /*---------- ----------------------------------------------  */ -->
-
     <section class="hobby">
       <h1 id="hobby">Hobby</h1>
       <div class="hobby__box">
         <div class="hobby__minibox">
           <h2>Before</h2>
-          <img src="https://github.com/m0700045/masa/blob/master/IMG_2783.jpg?raw=true" alt="一年前の写真" width="250px" height="250px">
+          <img src="https://github.com/m0700045/masa/blob/master/img/IMG_2783.jpg?raw=true" alt="一年前の写真" width="250px" height="250px">
         </div>
         <p><i class="fas fa-arrow-down fa-4x" id="p1"></i></p>
         <p><i class="fas fa-arrow-right fa-4x" id="p2"></i></p>
-
         <div class="hobby__minibox">
           <h2>After</h2>
-          <img src="https://github.com/m0700045/masa/blob/master/IMG_2784.jpg?raw=true" alt="コミットした写真"  width="250px" height="250px">
+          <img src="https://github.com/m0700045/masa/blob/master/img/IMG_2784.jpg?raw=true" alt="コミットした写真"  width="250px" height="250px">
         </div>
       </div>
-
       <div class="hobby__display"> 
-        <ul>
-          <li>上の写真は限られた時間の中で、一年間トレーニングに励んだ成果です。</li>
-          <li>ただトレーニングするのではなく、<span>どの様にすればより効率よく目標に近づけるか</span>を考えました。</li>
-          <li> 現状に満足する事なく、<span>さらに上を目指しています。</li>
-        </ul>
-
-        <p id="hobby__open">詳細へ</p>
+        <p> 上の写真は限られた時間の中で、
+          一年間トレーニ ングに励んだ成果です。<br>
+          ただトレーニングするのではなく、<span>どの様にすればより効率よく目標に近づけるか</span>を考えました。<br>
+          現状に満足する事なく、<span>さらに上を目指しています。
+        </p>
+        <div class="hobby__button">
+          <button id="hobby__open">詳細へ</button>
+        </div>
     </div>
       <div id="hobby__mask" ></div>
-
       <div  id="hobby__hidden" >
-        <ul >
-          <li>
-            私は、アウトドア・スポーツが好きで、これまでロードバイク・山登り・ソロキャンプ・テニスをしてきました。
-          </li>
-          <li>
-            しかしバス会社に就職してからは休みが取れず、まとまった自分の時間は多くありませんでした。
-          </li>
-          <li>
-            職場で筋力トレーニングのサークルがあり、職場の先輩方とトレーニングさせていただきました。
-          </li>
-          <li>
-            筋力トレーニングの楽しさを知った私は向上心が芽生え、休憩時間や自宅で励みました。
-          </li>
-          <li>
-          上の写真は限られた時間の中で、一年間トレーニングに励んだ成果です。ただトレーニングするのではなく、<span>どの様にすればより効率よく目標に近づけるかを考えました。</span>
-          </li>
-          <li>        
+        <p>
+            私は、アウトドア・スポーツが好きで、これまでロードバイク・山登り・ソロキャンプ・テニスをしてきました。<br>
+            しかしバス会社に就職してからは休みが取れず、まとまった自分の時間は多くありませんでした。<br>
+            職場で筋力トレーニングのサークルがあり、職場の先輩方とトレーニングさせていただきました。<br>
+            筋力トレーニングの楽しさを知った私は向上心が芽生え、休憩時間や自宅で励みました。<br>
+            上の写真は限られた時間の中で、一年間トレーニングに励んだ成果です。ただトレーニングするのではなく、<span>どの様にすればより効率よく目標に近づけるかを考えました。</span><br>
             現状に満足する事なく、<span>さらに上を目指しています。</span>
-          </li>
-        </ul>
-        <p id="hobby__close">戻る</p>
+        </p>
+        <div class="hobby__button">
+          <button id="hobby__close">戻る</button>
+        </div>
     </div>
     </section>
     <!-- /*---------- ----------------------------------------------  */ -->
@@ -159,50 +140,48 @@
         
       <h1 id="keireki"><i class="fas fa-running  fa-sm"></i>Career</h1>
       <div class="life__display"> 
-        <ul>
-          <li>2014年3月 　　　大阪府北摂つばさ高等学校　普通総合学科　卒業</li>
-          <li>2014年3月 　　　大阪行岡医療大学　医療学部　理学療法学科　入学</li>
-          <p><span>三年間一日８時間以上の学習を続けた結果、一回生から大学中退まで常にトップ</span>でした。
-          また、三回生で受けた<span>「国家試験の為の全国模試」では全国１位</span>になりました。
-          </p>  
-          <li>2017年3月 　　　大阪行岡医療大学　医療学部　理学療法学科　中途退学</li>
+        <p class="life__day">2014年3月 　　　大阪府北摂つばさ高等学校　普通総合学科　卒業</p>
+        <p class="life__day">2014年3月 　　　大阪行岡医療大学　医療学部　理学療法学科　入学</p>
+        <p class="life__text"><span>三年間一日８時間以上の学習を続けた結果、一回生から大学中退まで常にトップ</span>でした。<br>
+        また、三回生で受けた<span>「国家試験の為の全国模試」では全国１位</span>になりました。
+        </p>  
+        <p class="life__day">2017年3月 　　　大阪行岡医療大学　医療学部　理学療法学科　中途退学</p>
 
-          <li>2017年10月　　　阪急バス　株式会社　就職</li>
-          <p>普通免許を取得してから三年間で<span>車を運転した事は数回程度</span>でした。ですが、バス運転士になるという<span>強い想いとチャレンジ精神</span>があり、大型二種免許を取得し運転士なる事ができました。</p>
-          <p>そして在籍中は<span>無事故無違反そしてお客様からのお叱りも無く、不規則な勤務でしたが無遅刻無欠勤でした。</span> </p>
-          <li>2020年10月　　　阪急バス　株式会社　退職</li>
-          <p>わたしは家族との時間を何よりも大切にしたいと考え、退職を決意しました。</p>
-        
-          <li>2020年10月　　　転職活動中</li>
-          <p>プログラミングを始めてから、<span>現在まで1日も休む事なく継続して学習を続けています。</span>
-          </p>
-        </ul>
-        <p id="life__open">詳細へ</p>
+        <p class="life__day">2017年10月　　　阪急バス　株式会社　就職</p>
+        <p class="life__text">普通免許を取得してから三年間で<span>車を運転した事は数回程度</span>でした。<br>ですが、バス運転士になるという<span>強い想いとチャレンジ精神</span>があり、大型二種免許を取得し運転士なる事ができました。<br>そして在籍中は<span>無事故無違反そしてお客様からのお叱りも無く、不規則な勤務でしたが無遅刻無欠勤でした。</span> </p>
+        <p class="life__day">2020年10月　　　阪急バス　株式会社　退職</p>
+        <p class="life__text">わたしは家族との時間を何よりも大切にしたいと考え、退職を決意しました。</p>
+      
+        <p class="life__day">2020年10月　　　転職活動中</p>
+        <p class="life__text">プログラミングを始めてから、<span>現在まで1日も休む事なく継続して学習を続けています。</span>
+        </p>
+        <div class="life__button">
+          <button id="life__open">詳細へ</button>
+        </div>
     </div>
       <div id="life__mask" ></div>
 
-      <div  id="life__hidden" >
-        <ul >
-          <li>2014年3月 　　　大阪府北摂つばさ高等学校　普通総合学科　卒業</li>
-          <li>2014年3月 　　　大阪行岡医療大学　医療学部　理学療法学科　入学</li>
-          <p>健康と体の仕組みに興味を持ち、それらを学べる大学に入学。
-            <span>三年間一日８時間以上の学習を続けた結果、一回生から大学中退まで常にトップ</span>でした。
-          また、三回生で受けた<span>「国家試験の為の全国模試」では全国１位</span>になりました。
-          幼い頃からのバスの運転士という夢が諦め切れず退学を決意しました。
-          </p>  
-          <li>2017年3月 　　　大阪行岡医療大学　医療学部　理学療法学科　中途退学</li>
+      <div id="life__hidden">
+        <p class="life__day">2014年3月 　　　大阪府北摂つばさ高等学校　普通総合学科　卒業</p>
+        <p class="life__day">2014年3月 　　　大阪行岡医療大学　医療学部　理学療法学科　入学</p>
+        <p class="life__text">健康と体の仕組みに興味を持ち、それらを学べる大学に入学。
+        <span>三年間一日８時間以上の学習を続けた結果、一回生から大学中退まで常にトップ</span>でした。
+        また、三回生で受けた<span>「国家試験の為の全国模試」では全国１位</span>になりました。
+        幼い頃からのバスの運転士という夢が諦め切れず退学を決意しました。
+        </p>  
+        <p class="life__day">2017年3月 　　　大阪行岡医療大学　医療学部　理学療法学科　中途退学</p>
 
-          <li>2017年10月　　　阪急バス　株式会社　就職</li>
-          <p>幼い頃の夢であったバス会社に就職。普通免許を取得してから三年間で車を運転した事は数回程度でした。自動車学校の教官の方やバス会社の教育指導の方には多くの叱責を受けましたがバス運転士になるという<span>強い想いとチャレンジ精神</span>があり、大型二種免許を取得し運転士なる事ができました。</p>
-          <p>そして在籍中は<span>無事故無違反そしてお客様からのお叱りも無く、不規則な勤務でしたが無遅刻無欠勤でした。</span> </p>
-          <li>2020年10月　　　阪急バス　株式会社　退職</li>
-          <p>2020年の春に、翌年の1月に家族が増える事がわかりました。現職では職場が離れていてさらに不規則な勤務体制の為、家にいる時間はあまりありませんでした。わたしは家族との時間を何よりも大切にしたいと考え、退職を決意しました。</p>
-        
-          <li>2020年10月　　　転職活動中</li>
-          <p>学生の時のように、新しい事を学びずっと成長し続けられる『プログラミング』を勉強しています。プログラミングを初めてから、<span>現在まで1日も休む事なく継続して学習を続けています。</span>
-          </p>
-        </ul>
-        <p id="life__close">戻る</p>
+        <p class="life__day">2017年10月　　　阪急バス　株式会社　就職</p>
+        <p class="life__text">幼い頃の夢であったバス会社に就職。普通免許を取得してから三年間で車を運転した事は数回程度でした。自動車学校の教官の方やバス会社の教育指導の方には多くの叱責を受けましたがバス運転士になるという<span>強い想いとチャレンジ精神</span>があり、大型二種免許を取得し運転士なる事ができました。<br>そして在籍中は<span>無事故無違反そしてお客様からのお叱りも無く、不規則な勤務でしたが無遅刻無欠勤でした。</span> </p>
+        <p class="life__day">2020年10月　　　阪急バス　株式会社　退職</p>
+        <p class="life__text">2020年の春に、翌年の1月に家族が増える事がわかりました。現職では職場が離れていてさらに不規則な勤務体制の為、家にいる時間はあまりありませんでした。わたしは家族との時間を何よりも大切にしたいと考え、退職を決意しました。</p>
+      
+        <p class="life__day">2020年10月　　　転職活動中</p>
+        <p class="life__text">学生の時のように、新しい事を学びずっと成長し続けられる『プログラミング』を勉強しています。プログラミングを初めてから、<span>現在まで1日も休む事なく継続して学習を続けています。</span>
+        </p>
+        <div class="life__button">
+          <button id="life__close">戻る</button>
+        </div>
     </div>
       
   </section> 
@@ -215,7 +194,7 @@
         <h1 id="portfolio"><i class="fas fa-book-open fa-sm"></i>Portfolio</h1>
       </div>
       <div class="portfolio__img">
-        <a href="https://github.com/m0700045"><img src="https://github.com/m0700045/masa/blob/master/IMG_0911_.png?raw=true" alt="portfolio" height="160" width="300"></a>
+        <a href="https://github.com/m0700045"><img src="https://github.com/m0700045/masa/blob/master/img/IMG_0911_.png?raw=true" alt="portfolio" height="160" width="300"></a>
         <p class="portfolio__p">Masa's portfolio</p>
         <p class="portfolio__p">（随時更新予定）</p>
       </div>
@@ -225,21 +204,14 @@
     <div class="contact">
       <h1 id="contact"><i class="far fa-envelope fa-sm"></i>Contact</h1>
       <div class="contact__mail">
-      
-        <table>
-        <tr>
-          <th><a href="mailto:masafumi19951214@gmail.com"><i class="far fa-envelope fa-1x"></i></a></th>
-          <td><a href="mailto:masafumi19951214@gmail.com">Mail</a></td>
-        </tr>
-        
-        <tr>
-          <th><a href="https://github.com/m0700045"><i class="fa fa-github fa-1x"aria-hidden="true"></i></a></th>
-          <td><a href="https://github.com/m0700045">Github</a></td>
-          
-        </tr>
-          
-        
-        </table>
+        <div class="contact__button">
+         <a href="mailto:masafumi19951214@gmail.com"><i class="far fa-envelope fa-1x"></i></a>
+          <a href="mailto:masafumi19951214@gmail.com">Mail</a>
+        </div>
+        <div class="contact__button">
+          <a href="https://github.com/m0700045"><i class="fa fa-github fa-1x"aria-hidden="true"></i></a>
+          <td><a href="https://github.com/m0700045">Github</a>
+        </div>
       </div>
       
     </div>
