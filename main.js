@@ -60,6 +60,7 @@ hobby__mask.addEventListener("click",() =>{
   });
 }
 
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
 
 {
@@ -109,7 +110,7 @@ const animationTargetElements = document.querySelectorAll(".top__animation");
         if(t === " "){
           textsArray.push(" ");
         }else{
-          textsArray.push('<span style="animation-delay: ' + ((j * .1) + 1) + 's;">' + t + '</span>');      
+          textsArray.push('<span style="animation-delay: ' + ((j * .1) +1) + 's;">' + t + '</span>');      
         }
       }
 
@@ -122,4 +123,20 @@ const animationTargetElements = document.querySelectorAll(".top__animation");
 
 
 }
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+{
+
+  // window.onload = function() {
+  //   const road = document.querySelector("road")
+  //   .classList.add('loaded');
+  // }
+    
+  const roading = document.querySelector("road");
+  
+  window.addEventListener("road", function(){
+    loding.style.display = "none";
+  })
+    
 }
+}
+
