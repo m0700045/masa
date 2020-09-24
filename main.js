@@ -124,18 +124,3 @@ const animationTargetElements = document.querySelectorAll(".top__animation");
 
 }
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-{
-
-  // window.onload = function() {
-  //   const road = document.querySelector("road")
-  //   .classList.add('loaded');
-  // }
-    
-  const roading = document.querySelector("road");
-  
-  window.addEventListener("road", function(){
-    loding.style.display = "none";
-  })
-    
-}
-}
