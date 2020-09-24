@@ -17,26 +17,26 @@ close.addEventListener("click",() => {
 }
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 {
-const hobby__open = document.getElementById("hobby__open");
-const hobby__hidden = document.getElementById("hobby__hidden");
-const hobby__close = document.getElementById("hobby__close");
-const hobby__mask = document.getElementById("hobby__mask");
+  const hobby__open = document.getElementById("hobby__open");
+  const hobby__hidden = document.getElementById("hobby__hidden");
+  const hobby__close = document.getElementById("hobby__close");
+  const hobby__mask = document.getElementById("hobby__mask");
 
-hobby__open.addEventListener("click",() =>{
-  hobby__hidden.classList.add("hobby__show");
-  hobby__mask.classList.add("hobby__show");
-});
+  hobby__open.addEventListener("click",() =>{
+    hobby__hidden.classList.add("hobby__show");
+    hobby__mask.classList.add("hobby__show");
+  });
 
-hobby__close.addEventListener("click",() =>{
-  hobby__hidden.classList.remove("hobby__show");
-  hobby__mask.classList.remove("hobby__show");
-});
+  hobby__close.addEventListener("click",() =>{
+    hobby__hidden.classList.remove("hobby__show");
+    hobby__mask.classList.remove("hobby__show");
+  });
 
-hobby__mask.addEventListener("click",() =>{
-  hobby__hidden.classList.remove("hobby__show");
-  hobby__mask.classList.remove("hobby__show");
-});
-}
+  hobby__mask.addEventListener("click",() =>{
+    hobby__hidden.classList.remove("hobby__show");
+    hobby__mask.classList.remove("hobby__show");
+  });
+  }
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 {
   const life__open = document.getElementById("life__open");
@@ -95,6 +95,7 @@ hobby__mask.addEventListener("click",() =>{
       }
     }
   })
+}
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 {
 const animationTargetElements = document.querySelectorAll(".top__animation");
@@ -116,11 +117,7 @@ const animationTargetElements = document.querySelectorAll(".top__animation");
 
       for (let k = 0; k < textsArray.length; k++) {
         targetElement.innerHTML += textsArray[k];
-        
-        
       }
   }
-
-
 }
-}
+
