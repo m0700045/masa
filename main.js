@@ -14,9 +14,8 @@ close.addEventListener("click",() => {
   navi.classList.remove("show");
   open.classList.remove("hide");
 });
-
 }
-
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 {
 const hobby__open = document.getElementById("hobby__open");
 const hobby__hidden = document.getElementById("hobby__hidden");
@@ -38,7 +37,7 @@ hobby__mask.addEventListener("click",() =>{
   hobby__mask.classList.remove("hobby__show");
 });
 }
-
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 {
   const life__open = document.getElementById("life__open");
   const life__hidden = document.getElementById("life__hidden");
@@ -59,4 +58,68 @@ hobby__mask.addEventListener("click",() =>{
     life__hidden.classList.remove("life__show");
     life__mask.classList.remove("life__show");
   });
+}
+
+
+
+{
+  const scrollAnimation = document.querySelectorAll(".life");
+  console.log(scrollAnimation);
+  console.log("画面の高さ",window.innerHeight);
+  document.addEventListener("scroll",() =>{
+    for (let i = 0; i < scrollAnimation.length; i++){
+      const getElementDistance = scrollAnimation[i].getBoundingClientRect().top + scrollAnimation[i].clientHeight * .3;
+      if(i ===i){
+        console.log(getElementDistance);
+      }
+      if(window.innerHeight > getElementDistance){
+        scrollAnimation[i].classList.add("life__show");
+      }
+    }
+  })
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+{
+  const scrollAnimation = document.querySelectorAll(".portfolio__element");
+  console.log(scrollAnimation);
+  console.log("画面の高さ",window.innerHeight);
+  document.addEventListener("scroll",() =>{
+    for (let i = 0; i < scrollAnimation.length; i++){
+      const getElementDistance = scrollAnimation[i].getBoundingClientRect().top + scrollAnimation[i].clientHeight * .7;
+      if(i ===i){
+        console.log(getElementDistance);
+      }
+      if(window.innerHeight > getElementDistance){
+        scrollAnimation[i].classList.add("portfolio__show");
+      }
+    }
+  })
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+{
+const animationTargetElements = document.querySelectorAll(".top__animation");
+  for (let i = 0; i < animationTargetElements.length; i++) {
+    const targetElement = animationTargetElements[i];
+       let texts = targetElement.textContent;
+       let textsArray = [];
+
+      targetElement.textContent ="";
+
+      for (let j = 0; j <  texts.split("").length; j++) {
+        const t = texts.split("")[j];
+        if(t === " "){
+          textsArray.push(" ");
+        }else{
+          textsArray.push('<span style="animation-delay: ' + ((j * .1) *1) + 's;">' + t + '</span>');      
+        }
+      }
+
+      for (let k = 0; k < textsArray.length; k++) {
+        targetElement.innerHTML += textsArray[k];
+        
+        
+      }
   }
+
+
+}
+}
