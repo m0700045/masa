@@ -4,17 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Masafumi's profileo</title>
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/navi.css">
-    <link rel="stylesheet" href="./css/career.css">
-    <link rel="stylesheet" href="./css/portfolio.css">
-    <link rel="stylesheet" href="./css/top.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/hobby.css">
-    <link rel="stylesheet" href="./css/life.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="icon" href="https://github.com/m0700045/masa/blob/master/IMG_2764.jpg?raw=true">
     <script src="https://kit.fontawesome.com/18294fcd90.js" crossorigin="anonymous"></script>
   </head>
@@ -55,8 +45,8 @@
     <section class="section__top">
       <div class="top">
           <div class="top__title">
-            <h1>Masafumi's profile</h1>
-            <p>Welcom to my site</p>
+            <h1 class="top__animation">Masafumi's profile</h1>
+            <p class="top__animation">Welcom to my site</p>
           </div>
       </div>
     </section>
@@ -190,13 +180,19 @@
     <!-- /*---------- ----------------------------------------------  */ -->
 
     <div class="portfolio">
-      <div class="portfolio-title">
-        <h1 id="portfolio"><i class="fas fa-book-open fa-sm"></i>Portfolio</h1>
+      <div>
+        <h1 id="portfolio"  class="portfolio__title"><i class="fas fa-book-open fa-sm"></i>Portfolio</h1>
       </div>
       <div class="portfolio__img">
-        <a href="https://github.com/m0700045"><img src="https://github.com/m0700045/masa/blob/master/img/IMG_0911_.png?raw=true" alt="portfolio" height="160" width="300"></a>
-        <p class="portfolio__p">Masa's portfolio</p>
-        <p class="portfolio__p">（随時更新予定）</p>
+        <div class="portfolio__element">
+          <a href="https://github.com/m0700045"><img src="https://github.com/m0700045/masa/blob/master/img/IMG_0911_.png?raw=true" alt="portfolio" height="160px" width="300px"></a>
+          <p class="portfolio__p">Masa's portfolio</p>
+        </div>
+
+        <div class="portfolio__element">
+          <img src="https://github.com/m0700045/masa/blob/master/img/unnamed.jpg?raw=true" alt="coming soon" height="160px" width="300px">
+          <p class="portfolio__p">（随時更新予定）</p>
+        </div>
       </div>
     </div>
     <!-- /*---------- ----------------------------------------------  */ -->
@@ -236,3 +232,4 @@
     <script src="main.js"></script>
   </body>
 </html>
+
