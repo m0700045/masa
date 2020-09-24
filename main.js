@@ -109,7 +109,7 @@ const animationTargetElements = document.querySelectorAll(".top__animation");
         if(t === " "){
           textsArray.push(" ");
         }else{
-          textsArray.push('<span style="animation-delay: ' + ((j * .1) *1) + 's;">' + t + '</span>');      
+          textsArray.push('<span style="animation-delay: ' + ((j * .1) + 1) + 's;">' + t + '</span>');      
         }
       }
 
