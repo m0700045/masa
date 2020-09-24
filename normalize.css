@@ -195,14 +195,17 @@ header {
 }
 
 .top__animation span:nth-of-type(odd){
-  animation: showTextTop 2s backwards;
+  animation: showTextTop 2s  2s backwards;
   display: inline-block;
+  opacity: 1;
 }
 
 .top__animation span:nth-of-type(even){
-  animation: showTextBottom 2s backwards;
+  animation: showTextBottom 2s 2s backwards;
   display: inline-block;
+  opacity: 1;
 }
+
 
 
 @keyframes showTextBottom{
@@ -549,7 +552,6 @@ main{
   z-index: -4;
   background-attachment: fixed;
   padding-left:0;
-  height:1200px;
   width:100%;
   
 }
@@ -687,7 +689,7 @@ main{
   .life{
     width:100%;
     border: 2px solid black;
-    height: 1500px;
+    height: 1400px;
     
   }
   
