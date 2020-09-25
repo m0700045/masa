@@ -131,5 +131,5 @@ const animationTargetElements = document.querySelectorAll(".top__animation");
     }else{
       document.querySelector(".jump").classList.remove("jump__apper");
     }
-  })
+  });
 }
