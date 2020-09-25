@@ -120,16 +120,16 @@ const animationTargetElements = document.querySelectorAll(".top__animation");
       }
   }
 }
-
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 {
   window.addEventListener("scroll", function(){
     let scroll = document.documentElement.scrollTop;
     
 
-    if(scroll > 100){
+    if(scroll > 100) {
       document.querySelector(".jump").classList.add("jump__apper");
-    }else{
+    } else {
       document.querySelector(".jump").classList.remove("jump__apper");
     }
-  });
+   });
 }
